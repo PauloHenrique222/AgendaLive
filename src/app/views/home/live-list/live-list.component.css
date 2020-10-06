@@ -1,0 +1,60 @@
+.mat-tab-group{
+  padding-top: 40px;
+  margin: 0 2%;
+}
+.mat-card{
+  padding: 5px;
+  margin: 2%;
+  border: 1px solid #ccc;
+}
+.mat-card-title{
+  min-height: 80px;
+}
+.row{
+  font-size: 12px;
+}
+span{
+  display: inline-block;
+}
+.titulo span:nth-child(1){
+ width: 65%;
+ font-size: 17px;
+}
+.titulo span:nth-child(2){
+  width: 1%;
+}
+.titulo span:nth-child(3){
+  width: 28%;
+  background-color: rgba(0, 0, 255, 0.466);
+  padding: 0 10px;
+  text-align: center;
+}
+iframe{
+  height: 380px;
+}
+
+@media screen and (min-width: 777px){
+  .mat-card{
+    display: inline-block;
+    width: 47%;
+    margin: 0.4%;
+  }
+
+  iframe{
+    height: 300px;
+  }
+
+}
+
+@media screen and (min-width: 1166px){
+  .mat-card{
+    display: inline-block;
+    width: 31%;
+    margin: 0.6%;
+  }
+
+  iframe{
+    height: 250px;
+  }
+
+}

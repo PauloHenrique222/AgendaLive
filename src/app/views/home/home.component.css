@@ -1,0 +1,12 @@
+.toolbar{
+  font-size: 1.2em;
+  height: 80px;
+}
+.date-icon{
+  padding-left: 5px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+

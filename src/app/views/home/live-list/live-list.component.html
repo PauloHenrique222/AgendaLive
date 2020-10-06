@@ -1,0 +1,56 @@
+<mat-tab-group class="mat-tab-group">
+  <mat-tab label="REALIZADAS">  
+
+    <ng-container *ngFor="let live of livePrevious">
+
+      <mat-card class="mat-card">
+        <mat-card-title class="mat-card-title">
+          <div class="row">
+            <p class="titulo">
+              <span>{{live.liveName}}</span> 
+              <span></span>  
+              <span>{{live.liveDate | localDateTime}}</span>
+            </p>
+            <p>
+              Canal: <span>{{live.channelName}}</span>
+            </p>
+          </div>
+        </mat-card-title>
+        <mat-card-content>
+            <div>
+              <iframe width="100%" height="300px" [src]="live.urlSafe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </mat-card-content>
+      </mat-card>
+
+    </ng-container>
+
+  </mat-tab>
+  <mat-tab label="PRÓXIMAS"> 
+
+    <ng-container *ngFor="let live of liveNext">
+
+      <mat-card class="mat-card">
+        <mat-card-title class="mat-card-title">
+          <div class="row">
+            <p class="titulo">
+              <span>{{live.liveName}}</span> 
+              <span></span>  
+              <span>{{live.liveDate | localDateTime}}</span>
+            </p>
+            <p>
+              Canal: <span>{{live.channelName}}</span>
+            </p>
+          </div>
+        </mat-card-title>
+        <mat-card-content>
+            <div>
+              <iframe width="100%" height="250" [src]="live.urlSafe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </mat-card-content>
+      </mat-card>
+
+    </ng-container>
+
+  </mat-tab>
+</mat-tab-group>
